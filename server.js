@@ -3,7 +3,9 @@ import express from 'express'
 const app = express();
 
 app.get("/", (req, res) => {
-  res.send("Hello from Excloud 🚀");
+  res.json({
+    message:"we are successfully running:excloud"
+  });
 });
 
 const PORT = 3000;
