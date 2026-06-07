@@ -12,7 +12,7 @@ jobs:
         steps:
 
           - name: checkout code 
-            uses: appleboy/ssh-action@master
+            uses: appleboy/ssh-action@v1.0.3
             with:
                 host: "210.79.128.201:3000"
                 username: ubuntu
