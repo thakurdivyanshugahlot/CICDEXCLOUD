@@ -12,6 +12,26 @@ jobs:
         steps:
 
           - name: Checkout code 
+            uses: actions/checkout@v4
+
+          - name: Login to Docker Hub
+            uses: docker/login-action@v4
+            with:
+                username: ${{ vars.DOCKERHUB_USERNAME }}
+                password: ${{ secrets.DOCKERHUB_TOKEN }}
+
+          - name: Set up QEMU
+            uses: docker/setup-qemu-action@v4
+
+          - name: Set up Docker Buildx
+            uses: docker/setup-buildx-action@v4
+
+          - name: Build and push
+            run: |
+              docker build -t divyanshugahlot0318/chaicode-node .
+              docker push divyanshugahlot0318/chaicode-node
+
+          - name: deploy on ExCloud
             uses: appleboy/ssh-action@v1.0.3
             with:
                 host: "210.79.128.201"
