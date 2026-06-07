@@ -11,10 +11,11 @@ jobs:
 
         steps:
 
-          - name: checkout code 
+          - name: Checkout code 
             uses: appleboy/ssh-action@v1.0.3
             with:
-                host: "210.79.128.201:3000"
+                host: "210.79.128.201"
+                port: 3000
                 username: ubuntu
                 key: ${{ secrets.PRIVATE_KEY }}
                 script: |
