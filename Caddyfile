@@ -1,3 +1,7 @@
+{
+    auto_https off
+}
+
 210.79.128.201 {
 
     handle {
