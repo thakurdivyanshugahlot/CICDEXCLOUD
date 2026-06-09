@@ -44,6 +44,6 @@ jobs:
                   
                   sudo docker pull divyanshugahlot0318/chaicode-node                  
 
-                  sudo docker run -d --name chaicode-node --restart unless-stopped 3000:3000 divyanshugahlot0318/chaicode-node
+                  sudo docker run -d --name chaicode-node --restart unless-stopped 3000:3000 -p divyanshugahlot0318/chaicode-node
                   
                   sudo docker image prune -f
