@@ -2,8 +2,7 @@
     auto_https off
 }
 
-210.79.128.201 {
-
+:80 {
     handle {
         reverse_proxy nodejs-server:3000 {
             header_up Host {host}
