@@ -1,7 +1,3 @@
-{
-    auto_https off
-}
-
 :80 {
     handle {
         reverse_proxy nodejs-server:3000 {
