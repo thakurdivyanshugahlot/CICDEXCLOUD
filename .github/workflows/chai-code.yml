@@ -43,7 +43,7 @@ jobs:
                   sudo docker rm chaicode-node || true
 
                   #again pull the fresh image 
-                  sudo docker pull divyanshugahlot0318/chaicode-node:latest
+                  sudo docker pull divyanshugahlot0318/chaicode-node
 
                   #Run docker run -d -p 3000:3000 divyanshugahlot0318/chaicode-node
 

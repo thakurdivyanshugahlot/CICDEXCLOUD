@@ -4,8 +4,8 @@ const app = express();
 
 app.get("/", (req, res) => {
   res.json({
-    message:"we are successfully running:excloud , lets dockerized it completely",
-    status:"success"
+    message:"we are successfully running:excloud , lets dockerized it completely ",
+    status:"success chal gya"
   });
 });
 
